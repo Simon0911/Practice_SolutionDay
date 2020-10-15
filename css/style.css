@@ -1,0 +1,372 @@
+.bg__color--green {
+    background-color: rgb(147, 177, 104);
+}
+
+a:hover {
+    text-decoration: none !important;
+}
+
+/* header & nav */
+.bg__img {
+    min-height: 700px;
+    background-image: url("../images/bg.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.logo__image {
+    width: 160px;
+    margin-left: 130px;
+}
+
+.navbar__content__title ul li {
+    margin: 10% 20px;
+}
+
+.navbar__content__sociallink ul li {
+    margin: 0 5px;
+}
+
+.navbar__content__btn:hover {
+    box-shadow: 0px 0px 30px 5px black;
+}
+
+.navbar__content__img {
+    width: 100%;
+}
+
+
+/* Header Side Item */
+.side__bar {
+    position: fixed;
+    right: 14px;
+    top: 37%;
+    z-index: 99;
+    display: none;
+    text-align-last: end;
+}
+
+.side__bar--active {
+    display: block;
+}
+
+.side__bar__item {
+    margin: 2px 0;
+}
+
+.side__bar__item a {
+    display: inline-block;
+    color: transparent;
+}
+
+.side__bar__item a:hover {
+    font-size: 18px;
+}
+
+.side__bar__item a::after {
+    content: "";
+    width: 7px;
+    height: 2px;
+    background-color: green;
+    display: inline-block;
+    margin-bottom: 4px;
+}
+
+.side__bar .active {
+    font-size: 18px;
+    color: gray !important;
+}
+
+.side__bar .active::after {
+    content: "";
+    width: 14px;
+    height: 2px;
+    background-color: white;
+    display: inline-block;
+}
+
+@media screen and (max-width:992px) {
+    #navbarSupportedContent {
+        display: none !important;
+    }
+}
+
+
+/* main__content */
+.main__content__text {
+    margin: 0 auto;
+}
+
+.timeline .time__block {
+    width: 20%;
+}
+
+.timeline__point {
+    margin: 25px 0;
+    border-bottom: 1px solid black;
+    position: relative;
+    line-height: 25px;
+}
+
+.timeline__point::after {
+    content: "";
+    display: block;
+    height: 10px;
+    width: 10px;
+    border-radius: 50%;
+    background-color: white;
+    border: 1.5px solid;
+    position: absolute;
+    top: -5px;
+    left: calc(50% - 5px);
+    z-index: 99;
+}
+
+.timeline .focus {
+    font-size: 25px;
+    line-height: 24px;
+    color: rgb(147, 177, 104);
+}
+
+.focus .timeline__point {
+    border-color: rgb(147, 177, 104);
+}
+
+.timeline .focus .timeline__point::after {
+    width: 20px;
+    height: 20px;
+    border: 0;
+    background-image: url("../images/dot.png");
+    top: -10px;
+    left: calc(50% - 10px);
+    background-size: cover;
+    background-position: center center;
+}
+
+.time__block:nth-child(4) {
+    margin: -19px 0;
+}
+
+.time__block__year {
+    display: block;
+}
+
+
+/* table */
+.table__title {
+    margin: auto 0;
+}
+
+.table .table__content {
+    border-radius: 25px;
+}
+
+.table__agenda {
+    background-color: rgb(240, 240, 240);
+    border-radius: 20px;
+    padding: 0;
+}
+
+.table__agenda__item {
+    position: relative;
+    min-height: 130px;
+}
+
+.table__agenda__item:nth-child(2n) {
+    background-color: rgb(214, 207, 207);
+}
+
+.table__agenda__item__number {
+    font-size: 60px;
+}
+
+.table__agenda__item__content {
+    font-size: 25px;
+    max-width: 550px;
+}
+
+.table__agenda__item__content__time {
+    font-size: 12px;
+}
+
+.table__agenda__item__content__title:hover {
+    color: rgb(147, 177, 104);
+    ;
+}
+
+.table__agenda__item__content__detailinform {
+    max-width: 80%;
+    display: none;
+}
+
+.table__agenda__item__content__detailinform--active {
+    display: block !important;
+}
+
+.table__agenda__item__speaker {
+    position: absolute;
+    right: 15px;
+}
+
+.table__agenda__item__speaker__img {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    margin: 0 auto;
+}
+
+
+/* sponsors */
+.sponsors {
+    background-image: url("../images/small\ bg.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 500px;
+    position: relative;
+}
+
+.sponsors__level li:hover {
+    cursor: pointer;
+}
+
+.sponsors__level .active {
+    color: black;
+    border-bottom: 2px solid black;
+}
+
+.high__level__content {
+    display: none;
+}
+
+.middle__level__content {
+    display: none;
+}
+
+.low__level__content {
+    display: none;
+}
+
+.sponsors__content .active {
+    display: block;
+}
+
+.sponsors__logo img {
+    background-color: #fff;
+    border-radius: 15px;
+    padding: 30px;
+    margin: 10px 10px;
+    max-width: 100%;
+}
+
+/* showcase */
+.showcase ul li {
+    padding: 10px 20px 10px 20px;
+    cursor: pointer;
+}
+
+.showcase ul .active {
+    color: rgb(147, 177, 104);
+    border-bottom: 2px solid rgb(147, 177, 104);
+}
+
+.showcase__product__img {
+    max-width: 120px;
+}
+
+.showcase__product__sponsor {
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+}
+
+.showcase__product__introduce {
+    width: 100%;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+
+.theme {
+    background-color: #fff;
+    border-radius: 25px;
+    width: 1140px;
+}
+
+.theme__img {
+    background-position: center right;
+    background-size: cover;
+    border-top-left-radius: 25px;
+    border-bottom-left-radius: 25px;
+    width: 33.3333%;
+}
+
+.theme:nth-child(2n) .theme__img {
+    border-radius: 0;
+    border-top-right-radius: 25px;
+    border-bottom-right-radius: 25px;
+}
+
+.theme__info {
+    padding: 100px 50px;
+    width: 66.6667%;
+}
+
+.d-none {
+    display: none !important;
+}
+
+/* event */
+.event {
+    min-height: 800px;
+}
+
+.card {
+    min-height: 500px;
+    position: relative;
+    border-radius: 25px !important;
+}
+
+.card:hover {
+    box-shadow: -5px 5px 20px lightgray;
+    left: 2%;
+    top: -2%;
+}
+
+.card-text {
+    line-height: 35px;
+}
+
+.card-title {
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
+}
+
+.card__outside::after {
+    content: "";
+    background-image: url("../images/dot_bg.png");
+    background-size: cover;
+    display: block;
+    height: 350px;
+    width: 18rem;
+    position: absolute;
+    bottom: -15px;
+    left: 20%;
+    z-index: -1;
+}
+
+
+/* footer */
+.footer {
+    height: 100px;
+}
+
+
+/* Modal */
+.modal__custom__style {
+    border-radius: 25px !important;
+}
+
+.modal__customer__header {
+    background-color: rgb(147, 177, 104);
+    border-top-right-radius: 25px !important;
+    border-top-left-radius: 25px !important;
+}
