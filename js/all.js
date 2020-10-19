@@ -37,7 +37,7 @@ $(document).ready(function () {
             $('.side__bar li a:eq(3)').addClass('active');
             $('.side__bar li a:eq(3)').parent().siblings().find('a').removeClass('active');
         }
-        if ($scrollPos > $event.offset().top - 100) {
+        if ($scrollPos > $event.offset().top - 140) {
             $('.side__bar li a:eq(4)').addClass('active');
             $('.side__bar li a:eq(4)').parent().siblings().find('a').removeClass('active');
         }
@@ -101,5 +101,19 @@ $(document).ready(function () {
         $(this).siblings().removeClass('active');
         $('.product__box').addClass('d-none');
         $('.theme__box').removeClass('d-none');
+    })
+})
+
+// page__link連結滾動
+function menu_scroll(s_id) {
+    var position = $("#" + s_id).offset().top;
+    $('html, body').animate({
+        scrollTop: position
+    }, 'slow');
+}
+$(document).ready(function () {
+    $(".nav-link, .page__link").click(function () {
+        var s_id = $(this).attr("data-sec");
+        menu_scroll(s_id);
     })
 })

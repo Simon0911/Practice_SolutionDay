@@ -16,7 +16,7 @@
 
 <body style="background-color: rgba(225, 225, 225, 0.769);">
     <!-- Header & Nav -->
-    <div id="header" class="bg__img">
+    <div id="header" class="bg__img" id="header">
         <nav class="navbar navbar-expand-lg navbar-light bg-transparent">
             <div class="col-md-2 clearfix">
                 <a class="navbar-brand" href="#">
@@ -27,19 +27,19 @@
                 <div class="collapse navbar-collapse d-flex justify-content-end" id="navbarSupportedContent">
                     <ul class="navbar-nav ">
                         <li class="nav-item px-4">
-                            <a class="nav-link text-white" href="#">首頁</a>
+                            <a class="nav-link text-white page__link" data-sec="header" href="#">首頁</a>
                         </li>
                         <li class="nav-item px-4">
-                            <a class="nav-link text-white" href="#main__content">活動議程</a>
+                            <a class="nav-link text-white page__link" data-sec="main__content" href="#">活動議程</a>
                         </li>
                         <li class="nav-item px-4">
-                            <a class="nav-link text-white" href="#sponsors">逛攤位</a>
+                            <a class="nav-link text-white page__link" data-sec="sponsors" href="#">逛攤位</a>
                         </li>
                         <li class="nav-item px-4">
-                            <a class="nav-link text-white" href="#showcase">玩活動</a>
+                            <a class="nav-link text-white page__link" data-sec="showcase" href="#">玩活動</a>
                         </li>
                         <li class="nav-item px-4">
-                            <a class="nav-link text-white" href="#">贊助單位</a>
+                            <a class="nav-link text-white page__link" data-sec="event" href="#">贊助單位</a>
                         </li>
                     </ul>
                 </div>
@@ -72,19 +72,19 @@
         </div>
         <ul class="side__bar">
             <li class="side__bar__item">
-                <a href="#" class="active">零壹解決方案日</a>
+                <a href="#" class="page__link active" data-sec="header">零壹解決方案日</a>
             </li>
             <li class="side__bar__item">
-                <a href="#main__content">啟動大會</a>
+                <a href="#" class="page__link" data-sec="main__content">啟動大會</a>
             </li>
             <li class="side__bar__item">
-                <a href="#sponsors">贊助單位</a>
+                <a href="#" class="page__link" data-sec="sponsors">贊助單位</a>
             </li>
             <li class="side__bar__item">
-                <a href="#showcase">產品館</a>
+                <a href="#" class="page__link" data-sec="showcase">產品館</a>
             </li>
             <li class="side__bar__item">
-                <a href="#event">玩活動</a>
+                <a href="#" class="page__link" data-sec="event">玩活動</a>
             </li>
         </ul>
     </div>
